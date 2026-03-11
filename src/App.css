@@ -203,10 +203,10 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;ove
 /* ── MOBILE ── */
 @media(max-width:640px){
   .desktop{inset:28px 0 68px 0;padding:0.5rem;}
-  .home-win{border-radius:14px;margin:0 0.4rem;}
-  .wbody{padding:1.4rem 1.2rem 1.8rem;max-height:60vh;}
+  .home-win{border-radius:14px;margin:0 0.4rem;overflow:visible;}
+  .wbody{padding:1.4rem 0 1.8rem;max-height:60vh;overflow-x:hidden;}
   .home-h1{font-size:1.75rem;}
-  .icon-nav{gap:0.7rem;flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;padding-bottom:0.5rem;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
+  .icon-nav{gap:0.7rem;flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;padding:0 1rem 0.5rem 1rem;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
   .icon-nav::-webkit-scrollbar{display:none;}
   .icbox{width:42px;height:42px;font-size:1.1rem;border-radius:12px;}
   .ic-item{width:44px;font-size:0.55rem;flex-shrink:0;}
@@ -214,7 +214,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;ove
   .skills-grid{grid-template-columns:1fr 1fr;}
   .playlist-grid{grid-template-columns:1fr;}
   .radio-sidebar{width:100%;}
-  .radio-tab{display:flex;}
+  .radio-tab{display:flex;top:auto;bottom:160px;transform:none;}
   .dock{bottom:4px;padding:7px 10px;gap:0.28rem;}
   .dock-box{width:40px;height:40px;font-size:1.1rem;border-radius:11px;}
   .dock-label{font-size:0.48rem;}
