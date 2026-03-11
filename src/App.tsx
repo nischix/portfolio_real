@@ -1,4 +1,5 @@
-import { useState, useEffect, useRef, useCallback, ReactNode } from "react"
+import { useState, useEffect, useRef, useCallback } from "react"
+import type { ReactNode } from "react"
 import "./App.css"
 
 // ─── TYPES ───────────────────────────────────────────────────
